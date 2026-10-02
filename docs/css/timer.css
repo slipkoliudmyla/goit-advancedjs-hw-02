@@ -1,0 +1,75 @@
+.timer-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  font: inherit;
+  letter-spacing: inherit;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms ease;
+}
+
+#datetime-picker:hover,
+#datetime-picker:focus {
+  border-color: #000000;
+}
+
+#datetime-picker:disabled {
+  color: #808080;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+}
+
+[data-start] {
+  padding: 8px 16px;
+  font: inherit;
+  font-weight: 500;
+  letter-spacing: inherit;
+  color: #ffffff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+[data-start]:hover {
+  background-color: #6c8cff;
+}
+
+[data-start]:disabled {
+  color: #989898;
+  background-color: #cfcfcf;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
